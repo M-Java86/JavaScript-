@@ -19,3 +19,11 @@
 //for (let i = 0; i < 5; i++) {
 //console.log(i);
 //}
+var x = 10;
+function example() {
+  x = 5;
+  console.log(x);
+}
+example();
+
+console.log(x);
