@@ -19,11 +19,18 @@
 //for (let i = 0; i < 5; i++) {
 //console.log(i);
 //}
-var x = 10;
-function example() {
-  x = 5;
-  console.log(x);
-}
-example();
+//var x = 10;
+//function example() {
+ // x = 5;
+  //console.log(x);
+//}
+//example();
 
-console.log(x);
+//console.log(x);
+
+//Nan-not a number
+//parameters
+function my func(name1){
+  console.log(name1 + "is the best!")
+}
+myfunc()
