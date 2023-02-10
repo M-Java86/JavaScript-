@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Link element to connect to main.css file.-->
+    <link href="https:fonts.googleapis.com/css?family=Anton" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+    <title>uHost</title>
+    <!--3 ways to use CSS
+    1.inline styling
+    2. Css Selectors-is an additional piece of information that tells CSS to which element inside your Dom, so inside the <body></body> that you want to assign the delcaration.better alternative than inline. you add a selector by simply adding the tag name w/o <> so in our case it will be section-->
+    <!--normal html tag <style></style>inside the style tag you write Css rules you simply add a selector by-->
+    <!--selector-section,CSS rule-background: #ff1b68--->
+    <!--another way to adding styles is using an external stylesheet-->
+  </head>
+
+  <body>
+    <main>
+      <!--adding inline styling by add in the style attribute to the section. the style attribute is a normal html attribute that can be added to pretty much every html element. you can set a Css style by applying a CSS declaration inside of the style attribute or string you pass as an argument. A decalaration means you define what you want to style and how you want to style it. "background is property and red is the value" #-for hex code. you can. Inline styling is not recommened because if you take a bigger approach, create a bigger page with many styles it quickly becomes very hard to understand and read your code<section style="background: #ff1b68">
+        <h1>Get the freedom you deserve</h1>
+      </section>.A better way to style CSS is with selector-->
+      <section id="product-overview">
+        <!--assign ids to the tags.ids are not an attribute. you only add because you want to style the element.ids
+      also allow to add # at the end of your url and the browser will jump down to that element on the page.-->
+        <h1>Get the freedom you deserve.</h1>
+      </section>
+      <section id="plans">
+        <h1 class="section-title">Choose Your Plan</h1>
+        <!--kebab case;lower case-separated with dashes, because css is case sensitive-->
+      </section>
+    </main>
+  </body>
+</html>
+
+<!---More about Selectors
+Elements-Set equal style for these elements
+<html>
+  <h1>Our header </h1>
+  <p>The Blog Post</p>
+  <div>More Info</div>
+CSS
+h1 {
+  color: red;
+}
+Classes(selectors)-define a style that we apply to all
+elements that have the same class. A class is added
+to html by adding a class attribute:
+<h1 class="blog-post">
+  Our header</h1>
+  The blog post</p>
+  <div class="blog-post"> free to choose any class name I want
+    More info</div>
+    Css class will look like this:
+    .blog-post { all html elements that has this class will get the
+      red text color.
+      color: red;(declaration in the css rule)
+    }
+    To set a style for all elements on the page,
+    you will use the Universal selector.
+    Universal: example one with a class and another w/o a class,
+    the top two rules wouldn't apply. the only rule we will be able to turn
+    everything the same color would be *:
+    <html>
+    <h1>Our header</h1>
+    <p class="blog-post"> The blog post</p>
+    Css
+    Universal-selector
+    * { --- with the * selector you style everything on your page. you rarely use this one because you don't want all the same style on your page. 
+      color: red;
+    }
+  2 more selectors
+IDs-allow you to select elements by the id they have, then
+apply style to that one specific element.Since id only exist once on a page we only apply style to one single element
+in <html> it will look:
+  <h1 id="main-title">Our header</h1>
+  Css targeted to add # in front of the id name:
+  #main-title {
+    color: red;
+  }
+Last type of  main selectors are attribute selectors.with
+this you select html elements by the attribute they have and can 
+select multiple elements on the id selector,which only select one.
+in<html>
+  button disabled(attribute)>
+  Click
+</button>(standard html button attribute)
+in Css you will select all buttons or all elements with disabled attributes
+by inclosing the attribute name in square brackets(just a syntax that Css uses
+and then assigning your delcarations
+[disabled] { this css code would assign  a red text
+  to all elements no matter if they are buttons or not,
+  which have a disabled attribute.
+  color: red;
+}--->

@@ -1,0 +1,23 @@
+/* in this file we right our CSS rules. 
+A rule is composed of a selector, property and value.
+section(selector) { 
+  background(property): #ff1b68;(value)
+  grab that rule and put it in the css file. Adding an external link to css file
+  is recommended because we now have a clear separation of our html and Css code* {
+  /*element selector */
+#product-overview {
+  background: #ff1b68;
+}
+/* adding a new selector */
+h1 {
+  /* element selector */
+  /*selector */
+  color/*property */: white; /*value*/
+  font-family/*added additional property */: 'Anton', sans-serif;
+  /*default font, sepcial keyword that will use the default setup in the browser. located in settings in custom font section */
+}
+.section-title {
+  /*class selector */
+  /* rule set */
+  color: #2ddf5c; /*declaration */
+}
